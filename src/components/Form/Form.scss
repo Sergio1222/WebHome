@@ -1,0 +1,59 @@
+$additional-color: #444444;
+$main-color: #2c6add;
+
+.new-comment {
+  &__form {
+    width: 230px;
+    margin: 0 auto;
+  }
+
+  &__label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+
+    color: $additional-color;
+
+    &:last-of-type {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__label-title {
+    margin-bottom: 5px;
+  }
+
+  &__input {
+    padding: 3px 7px;
+
+    border: 1px solid $additional-color;
+
+    &--textarea {
+      font-family: inherit;
+      
+      resize: vertical;
+    }
+  }
+
+  &__submit {
+    width: 100%;
+    max-width: 400px;
+    padding: 7px 20px;
+
+    color: #fff;
+
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: $main-color;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #103f96;
+    }
+
+    &:active {
+      border-color: #444444;
+      background-color: #205cca;
+    }
+  }
+}

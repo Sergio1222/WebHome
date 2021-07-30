@@ -1,0 +1,52 @@
+$main-color: #2c6add;
+$additional-color: #919191;
+$text-height: 20px;
+
+.comment {
+  padding: 10px;
+
+  border-radius: 10px;
+
+  background-color: #f3f3f3;
+
+  &__name {
+    margin: 0 0 10px;
+    padding-bottom: 0.2em;
+
+    font-weight: normal;
+    text-align: center;
+    color: $main-color;
+
+    border-bottom: 1px solid #d1d1d1;
+  }
+
+  &__text {
+    height: $text-height;
+    overflow: hidden;
+    margin: 0 0 10px;
+
+    color: $additional-color;
+    line-height: $text-height;
+
+    &--expand {
+      height: min-content;
+      overflow-x: auto;
+    }
+  }
+
+  &__show {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 40px 5px;
+
+    color: $main-color;
+
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+
+    &--disabled {
+      display: none;
+    }
+  }
+}

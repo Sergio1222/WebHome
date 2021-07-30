@@ -1,0 +1,28 @@
+.comment-list {
+  padding: 20px;
+
+  border: 1px solid #d3d3d3;
+  border-radius: 15px;
+
+  &__title {
+    margin: 0 0 30px;
+
+    text-align: center;
+  }
+
+  &__content {
+    margin: 0 auto 35px;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  &__item {
+    margin-bottom: 15px;
+  }
+
+  &__pagination {
+    width: min-content;
+    margin: 0 auto;
+  }
+}

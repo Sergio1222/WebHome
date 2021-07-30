@@ -1,0 +1,55 @@
+$main-color: #2c6add;
+$additional-color: #919191;
+
+%scale-button {
+  transform: scale(1.15);
+}
+
+.pagination {
+  display: flex;
+  padding: 0;
+  
+  font-size: 16px;
+
+  border-collapse: collapse;
+  list-style: none;
+
+  &__link {
+    min-width: 40px;
+    margin-left: -1px;
+    padding: 5px 10px;
+    
+    font-size: inherit;
+    color: $main-color;
+
+    border: 1px solid;
+    background-color: #fff;
+    cursor: pointer;
+    transition: transform 0.1s;
+
+    &--switcher {
+      font-weight: bold;
+    }
+
+    &--selected {
+      font-weight: bold;
+
+      cursor: default;
+      @extend %scale-button;
+    }
+
+    &:hover {
+      @extend %scale-button;
+    }
+
+    &:disabled {
+      position: relative;
+      z-index: -1;
+
+      color: $additional-color;
+
+      transform: scale(1);
+      cursor: default;
+    }
+  }
+}
